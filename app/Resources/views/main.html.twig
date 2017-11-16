@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{% block title %}Lol progress tracker{% endblock %}</title>
+
+  {% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" >
+    <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/font-awesome.min.css') }}" >
+    <link rel="stylesheet" href="{{ asset('css/screen.css') }}" >
+  {% endblock %}
+</head>
+<body>
+{% block content %}{% endblock %}
+{% block javascript %}
+  <script src="{{ asset('js/jquery.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="{{ asset('vendor/bootstrap/js/bootstrap.js') }}"></script>
+  <script src="{{ asset('js/main.js') }}"></script>
+{% endblock %}
+</body>
+</html>
